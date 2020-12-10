@@ -1,0 +1,18 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="exampleInput1">File</label>
+    <input type="file" class="form-control" formControlName="imageFileName" #imageFile id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInput2">Uploader</label>
+    <input type="text" class="form-control" formControlName="uploader" id="exampleInput2">
+  </div>
+  <div class="form-group">
+    <label for="exampleInput3">Note</label>
+    <input type="text" class="form-control" formControlName="note" id="exampleInput3">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+<div>
+  <img [src]="res_image">
+</div>
